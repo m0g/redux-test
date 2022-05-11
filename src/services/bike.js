@@ -1,6 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-// Define a service using a base URL and expected endpoints
 export const bikeApi = createApi({
   reducerPath: "bikeApi",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3001" }),
@@ -10,10 +9,29 @@ export const bikeApi = createApi({
     }),
     getBikes: builder.query({
       query: () => `bikes`,
+      providesTags: ["Bikes"],
+    }),
+    postBike: builder.mutation({
+      query: (body) => ({
+        url: `bikes`,
+        method: "POST",
+        body,
+      }),
+      invalidatesTags: ["Bikes"],
+    }),
+    patchBike: builder.mutation({
+      query: (body) => ({
+        url: `/bikes/${body.id}`,
+        method: "PATCH",
+        body,
+      }),
     }),
   }),
 });
 
-// Export hooks for usage in functional components, which are
-// auto-generated based on the defined endpoints
-export const { useGetBikeByIdQuery, useGetBikesQuery } = bikeApi;
+export const {
+  useGetBikeByIdQuery,
+  useGetBikesQuery,
+  usePostBikeMutation,
+  usePatchBikeMutation,
+} = bikeApi;

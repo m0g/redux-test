@@ -11,7 +11,6 @@ export default function Show() {
 
   return (
     <div>
-      <Link to="/">Go home</Link>
       <h1>{data.model}</h1>
       <h2>{data.make}</h2>
     </div>

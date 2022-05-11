@@ -1,3 +1,29 @@
 {
-  "bikes": [{ "id": 1, "model": "Long haul trucker", "make": "Surly" }]
+  "bikes": [
+    {
+      "id": 1,
+      "model": "Long haul trucker",
+      "make": "Surly"
+    },
+    {
+      "model": "Awol",
+      "make": "Specialized",
+      "id": 2
+    },
+    {
+      "model": "Feather",
+      "make": "Fuji",
+      "id": 3
+    },
+    {
+      "model": "Endurace",
+      "make": "Canyon",
+      "id": 4
+    },
+    {
+      "model": "Track",
+      "make": "Cannondale",
+      "id": 5
+    }
+  ]
 }

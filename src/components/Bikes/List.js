@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useGetBikesQuery } from "../../services/bike";
 
 export default function List() {
-  const { data, error, isLoading } = useGetBikesQuery();
+  const { data, isLoading } = useGetBikesQuery();
 
   if (isLoading) {
     return <p>Loading...</p>;
