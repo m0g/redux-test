@@ -1,4 +1,4 @@
-# Kritek redux test
+# KT Redux test
 
 to run the project
 
