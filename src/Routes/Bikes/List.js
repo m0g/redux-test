@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useGetBikesQuery } from "../../services/bike";
-import DeleteButton from "./DeleteButton";
+import DeleteButton from "../../components/Bikes/DeleteButton";
 
 export default function List() {
   const { data, isLoading } = useGetBikesQuery();

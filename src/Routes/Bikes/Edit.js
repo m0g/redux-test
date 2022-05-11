@@ -1,6 +1,6 @@
 import { useGetBikeByIdQuery, usePatchBikeMutation } from "../../services/bike";
 import { useNavigate, useParams } from "react-router-dom";
-import Form from "./Form";
+import Form from "../../components/Bikes/Form";
 
 export default function Edit() {
   const navigate = useNavigate();

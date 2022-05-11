@@ -29,6 +29,11 @@
       "model": "Diverge",
       "make": "Specialized",
       "id": 6
+    },
+    {
+      "model": "Disc Trucker",
+      "make": "Surly",
+      "id": 7
     }
   ]
 }

@@ -1,6 +1,6 @@
 import { usePostBikeMutation } from "../../services/bike";
 import { useNavigate } from "react-router-dom";
-import Form from "./Form";
+import Form from "../../components/Bikes/Form";
 
 export default function Create() {
   const navigate = useNavigate();

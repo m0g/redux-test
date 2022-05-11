@@ -1,9 +1,9 @@
 import "./App.css";
-import List from "./components/Bikes/List";
+import List from "./Routes/Bikes/List";
 import { Routes, Route, Link } from "react-router-dom";
-import Show from "./components/Bikes/Show";
-import Edit from "./components/Bikes/Edit";
-import Create from "./components/Bikes/Create";
+import Show from "./Routes/Bikes/Show";
+import Edit from "./Routes/Bikes/Edit";
+import Create from "./Routes/Bikes/Create";
 
 function App() {
   return (
