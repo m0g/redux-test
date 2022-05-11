@@ -1,9 +1,6 @@
-import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import List from "./components/Bikes/List";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Show from "./components/Bikes/Show";
 import Edit from "./components/Bikes/Edit";
 import Create from "./components/Bikes/Create";

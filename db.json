@@ -24,6 +24,11 @@
       "model": "Track",
       "make": "Cannondale",
       "id": 5
+    },
+    {
+      "model": "Diverge",
+      "make": "Specialized",
+      "id": 6
     }
   ]
 }

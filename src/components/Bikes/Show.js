@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useGetBikeByIdQuery } from "../../services/bike";
 
 export default function Show() {
