@@ -4,16 +4,12 @@ import Form from "./Form";
 
 export default function Create() {
   const navigate = useNavigate();
-  const [createBike, { isLoading }] = usePostBikeMutation();
+  const [createBike] = usePostBikeMutation();
 
   const onSubmit = async (data) => {
     await createBike(data);
     navigate("/");
   };
-
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
 
   return (
     <div>

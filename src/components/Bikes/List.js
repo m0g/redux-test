@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { useGetBikesQuery } from "../../services/bike";
+import DeleteButton from "./DeleteButton";
 
 export default function List() {
   const { data, isLoading } = useGetBikesQuery();
@@ -26,7 +26,7 @@ export default function List() {
           <td>{make}</td>
           <td>
             <Link to={`/bikes/${id}/edit`}>Edit</Link>
-            <button>Delete</button>
+            <DeleteButton id={id} model={model} make={make} />
           </td>
         </tr>
       ))}

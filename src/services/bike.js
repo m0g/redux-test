@@ -25,6 +25,14 @@ export const bikeApi = createApi({
         method: "PATCH",
         body,
       }),
+      invalidatesTags: ["Bikes"],
+    }),
+    deleteBike: builder.mutation({
+      query: (id) => ({
+        url: `/bikes/${id}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["Bikes"],
     }),
   }),
 });
@@ -34,4 +42,5 @@ export const {
   useGetBikesQuery,
   usePostBikeMutation,
   usePatchBikeMutation,
+  useDeleteBikeMutation,
 } = bikeApi;

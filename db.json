@@ -2,7 +2,7 @@
   "bikes": [
     {
       "id": 1,
-      "model": "LHT",
+      "model": "Long Haul Trucker",
       "make": "Surly"
     },
     {
@@ -24,11 +24,6 @@
       "model": "Track",
       "make": "Cannondale",
       "id": 5
-    },
-    {
-      "model": "cargo",
-      "make": "omnium",
-      "id": 6
     }
   ]
 }
