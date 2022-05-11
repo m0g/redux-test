@@ -20,7 +20,9 @@ export default function List() {
       {data.map(({ id, model, make }) => (
         <tr>
           <td>{id}</td>
-          <td>{model}</td>
+          <td>
+            <Link to={`/bikes/${id}`}>{model}</Link>
+          </td>
           <td>{make}</td>
           <td>
             <Link to={`/bikes/${id}/edit`}>Edit</Link>

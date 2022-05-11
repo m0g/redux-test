@@ -1,3 +1,19 @@
+import { Link, useParams } from "react-router-dom";
+import { useGetBikeByIdQuery } from "../../services/bike";
+
 export default function Show() {
-  return <p>This is the show route</p>;
+  const { id } = useParams();
+  const { data, isLoading } = useGetBikeByIdQuery(id);
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  return (
+    <div>
+      <Link to="/">Go home</Link>
+      <h1>{data.model}</h1>
+      <h2>{data.make}</h2>
+    </div>
+  );
 }
